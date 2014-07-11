@@ -9,8 +9,10 @@ import Test.Hspec
 
 -- | The main entry point.
 main :: IO ()
-main = do
-      test
+main = hspec  $ do
+        describe "Prelude.head" $ do
+        it "returns the first element of a list" $ do
+            test
 --    putStrLn "Welcome to FP Haskell Center!"
 --    putStrLn "Have a good day!"
 
